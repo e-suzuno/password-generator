@@ -22,7 +22,7 @@ namespace PasswordGenerator
             int wordCount = GetWordCount();
             List<int> useTypesList = GetUseWordType();
             PasswordGenerator passwordGenerator = new PasswordGenerator();
-            textBox1.Text = passwordGenerator.CreatePassword(wordCount, useTypesList);
+            textBox2.Text = passwordGenerator.CreatePassword(wordCount, useTypesList);
 
         }
 

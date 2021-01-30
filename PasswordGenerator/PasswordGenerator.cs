@@ -28,7 +28,7 @@ namespace PasswordGenerator
 
                 string word = WordList.Substring(r2, 1);
 
-                Passwordsb.AppendLine(word);
+                Passwordsb.Append(word);
             }
 
             return Passwordsb.ToString();
