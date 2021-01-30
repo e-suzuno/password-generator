@@ -1,12 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PasswordGenerator
@@ -20,7 +14,7 @@ namespace PasswordGenerator
         }
 
 
-        
+
         //Password作成ボタン
         private void button1_Click(object sender, EventArgs e)
         {
@@ -28,7 +22,7 @@ namespace PasswordGenerator
             int wordCount = GetWordCount();
             List<int> useTypesList = GetUseWordType();
             PasswordGenerator passwordGenerator = new PasswordGenerator();
-            textBox1.Text = passwordGenerator.CreatePassword(wordCount , useTypesList);
+            textBox1.Text = passwordGenerator.CreatePassword(wordCount, useTypesList);
 
         }
 
@@ -40,7 +34,7 @@ namespace PasswordGenerator
             {
                 if (ck1.Checked)
                 {
-                    useTypesList.Add(int.Parse((string)ck1.Tag)  );
+                    useTypesList.Add(int.Parse((string)ck1.Tag));
                 }
             }
             return useTypesList;
