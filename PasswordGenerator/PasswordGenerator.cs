@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Text;
 
 namespace PasswordGenerator
 {
@@ -9,8 +7,8 @@ namespace PasswordGenerator
     {
 
 
-
-        public string CreatePassword(int wordCount , List<int> useTypesList)
+        
+        public string CreatePassword(int wordCount, List<int> useTypesList)
         {
 
             PasswordWordList passwordWordList = new PasswordWordList();
@@ -28,7 +26,7 @@ namespace PasswordGenerator
                 Random r1 = new System.Random();
                 int r2 = r1.Next(0, WordList.Length);
 
-                string word =  WordList.Substring(r2, 1);
+                string word = WordList.Substring(r2, 1);
 
                 Passwordsb.AppendLine(word);
             }

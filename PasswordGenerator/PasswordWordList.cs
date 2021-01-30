@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace PasswordGenerator
 {
@@ -32,10 +30,11 @@ namespace PasswordGenerator
 
 
         public void SetWordList(List<int> useWordTypes)
-        { 
+        {
             var sb = new System.Text.StringBuilder();
 
-            useWordTypes.ForEach((useWordType) => {
+            useWordTypes.ForEach((useWordType) =>
+            {
                 sb.AppendLine(__wordType[useWordType]);
             });
 
